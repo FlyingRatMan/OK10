@@ -1,0 +1,62 @@
+html {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flex-cont {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.left-part{
+    width: 70%;
+}
+
+.right-part {
+    width: 25%;
+
+}
+
+.main-header {
+    font-size: 3rem;
+    color: #515555;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 5rem;
+    text-align: center;
+    border-bottom: solid 2px #515555;
+    padding-bottom: .8rem;
+}
+
+.h2s {
+    font-size: 2rem;
+    color: #515555;
+    margin: 2rem 0 0 0;
+    border-left: solid 2px #515555;
+    padding-left: .8rem;
+}
+
+p, li {
+    font-size: 1.5rem;
+    color: #515555;
+    text-align: justify;
+}
+
+ul li {
+    padding-top: .8rem;
+    list-style-type: none;
+}
+
+ol li {
+    padding-top: .8rem;
+}
+
+.ol1>li {
+    padding-top: 2rem;
+}
+
+ul {
+    padding-left: 0;
+}
+
