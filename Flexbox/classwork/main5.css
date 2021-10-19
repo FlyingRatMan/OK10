@@ -1,0 +1,42 @@
+body {
+    width: 30%;
+    margin: 0 auto;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.parent {
+    display: flex;
+    flex-flow: column;
+    row-gap: 10px;
+}
+
+.alpha {
+    display: flex;
+    height: 300px;
+    column-gap: 10px;
+}
+
+.alpha .child {
+    border: 2px solid black;
+    flex: 1;
+}
+
+.beta {
+    align-self: stretch;
+    height: 150px;
+    border: 2px solid black;
+}
+
+.gamma {
+    display: flex;
+    height: 150px;
+    column-gap: 10px;
+}
+
+.gamma .child {
+    flex: 1;
+    border: 2px solid black;
+}

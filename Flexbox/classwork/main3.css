@@ -1,0 +1,53 @@
+body {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.alpha {
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    row-gap: 10px;
+}
+
+.a {
+    align-self: stretch;
+    border: 2px solid black;
+    height: 200px;
+}
+
+.beta {
+    display: flex;
+    width: 100%;
+    column-gap: 10px;
+}
+
+.gamma {
+    display: flex;
+    flex-flow: column;
+    flex: 3 200px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.b {
+    align-self: stretch;
+    border: 2px solid black;
+    height: 200px;
+}
+
+.f {
+    flex: 1 200px;
+    border: 2px solid black;
+}
+
+.delta {
+    display: flex;
+    column-gap: 10px;
+}
+
+.delta .child {
+    flex: 1 100px;
+    height: 200px;
+    border: 2px solid black;
+}
