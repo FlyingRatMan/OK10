@@ -1,0 +1,37 @@
+body {
+    width: 50%;
+    margin: auto;
+}
+
+.a {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid black;
+    background-color: lightgrey;
+    margin-bottom: 10px;
+}
+
+.flex-parent {
+    width: 100%;
+    display: flex;
+    column-gap: 10px;
+}
+
+.flex-child {
+    height: 400px;
+    text-align: center;
+    border: 2px solid black;
+    background-color: lightgrey;
+}
+
+.b {
+    flex: 4 400px;
+}
+
+.c {
+    flex: 1 400px;
+}
+
+/*SECONF HW*/
