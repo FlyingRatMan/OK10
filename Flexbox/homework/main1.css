@@ -3,35 +3,39 @@ body {
     margin: auto;
 }
 
-.a {
+* {
+    box-sizing: border-box;
+}
+
+.highlighted {
+    border: 2px solid black;
+    background-color: lightgrey;
+}
+
+.header {
     width: 100%;
     height: 200px;
     text-align: center;
-    box-sizing: border-box;
-    border: 2px solid black;
-    background-color: lightgrey;
     margin-bottom: 10px;
 }
 
-.flex-parent {
+.main-container {
     width: 100%;
     display: flex;
     column-gap: 10px;
 }
 
-.flex-child {
+.main-container__item {
     height: 400px;
     text-align: center;
-    border: 2px solid black;
-    background-color: lightgrey;
 }
 
-.b {
-    flex: 4 400px;
+.main-container__item:first-of-type {
+    flex: 4;
 }
 
-.c {
-    flex: 1 400px;
+.main-container__item:last-of-type  {
+    flex: 1;
 }
 
-/*SECONF HW*/
+

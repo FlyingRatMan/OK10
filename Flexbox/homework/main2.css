@@ -1,16 +1,11 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
 body {
     width: 50%;
     margin: 0 auto;
-}
-
-.parent, .parent-mid {
-    display: flex;
-    column-gap: 10px;
-    row-gap: 10px;
-}
-
-.parent {
-    flex-flow: column;
 }
 
 .child {
@@ -19,12 +14,22 @@ body {
     border: 2px solid black;
 }
 
-.main {
-    height: 300px;
-    flex: 4 400px;
+.page {
+    flex-flow: column;
 }
 
-.aside {
+.page, .page__content {
+    display: flex;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.page__content__main {
     height: 300px;
-    flex: 1 400px;
+    flex: 4;
+}
+
+.page__content__aside {
+    height: 300px;
+    flex: 1;
 }

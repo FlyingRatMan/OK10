@@ -1,34 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
 body {
     width: 50%;
     margin: 0 auto;
 }
 
-#header,
-#footer {
+.highlight {
+    border: 2px solid black;
+}
+
+.header,
+.footer {
     width: 100%;
     height: 100px;
-    border: 2px solid black;
     margin: 10px 0;
 }
 
-.parent {
+.content {
     display: flex;
     column-gap: 10px;
 }
 
-.flex-post {
-    flex: 2 200px;
+.content__menu {
+    flex: 1;
+}
+
+.content__post {
+    flex: 2;
     display: flex;
     flex-flow: column;
     row-gap: 10px;
 }
 
-#menu {
-    flex: 1 200px;
-    border: 2px solid black;
-}
-
-.post {
+.content__post__item {
     height: 200px;
-    border: 2px solid black;
 }
