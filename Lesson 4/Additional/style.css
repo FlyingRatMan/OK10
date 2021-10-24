@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+:root {
+    --grey: #ced8e2;
+    --aqua: #38c6e9;
+    --deep: #102b3e;
+
+    --mobile-width: 680px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.grey {
+    background-color: var(--grey);
+}
+
+.aqua {
+    background-color: var(--aqua);
+}
+
+.deep {
+    background-color: var(--deep);
+}
+
+.wrap {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.rad {
+    border-radius: .5rem;
+}
+
+.border {
+    border: .1rem solid var(--aqua);
+    border-radius: .8rem;
+    padding: 1.5rem;
+}
+
+.social {
+    height: 2.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.social__icon {
+    background-color: var(--deep);
+    height: 1rem;
+    width: 3rem;
+}
+
+.header {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    height: 4rem;
+    width: 8rem;
+    background-color: var(--deep);
+}
+
+.header__nav {
+    display: flex;
+    column-gap: 1.5rem;
+}
+
+.header__nav * {
+    height: 1rem;
+    width: 5rem;
+    background-color: var(--deep);
+    border-radius: .5rem;
+}
+
+.banner {
+    padding: 5rem 20rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner button {
+    width: 8rem;
+    height: 2rem;
+    background-color: var(--deep);
+    border-style: none;
+    color: var(--grey);
+    margin: .5rem;
+}
+
+.banner p,
+.banner h1 {
+    margin: .5rem;
+}
+
+.cases {
+    padding: 5rem 0;
+}
+
+.cases h2 {
+    text-align: center;
+}
+
+.cases__box {
+    display: flex;
+    column-gap: 4rem;
+    justify-content: center;
+}
+
+.cases__box__item {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.cases__box__item div {
+    border-radius: .5rem;
+    height: 7rem;
+    width: 7rem;
+    background-color: var(--deep);
+    margin-bottom: 1rem;
+}
+
+.customers {
+    display: flex;
+    column-gap: 4rem;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+.customers__box {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.customers__box div {
+    border-radius: 50%;
+    height: 7rem;
+    width: 7rem;
+    background-color: var(--grey);
+    margin-bottom: 1rem;
+}
+
+.customers__box p {
+    color: var(--grey);
+}
+
+.feedback {
+    padding: 5rem 0;
+}
+
+.feedback h2 {
+    text-align: center;
+}
+
+.feedback__box {
+    display: flex;
+    flex-flow: wrap;
+    column-gap: 4rem;
+    justify-content: center;
+}
+
+.feedback__box__item {
+    width: 18rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.feedback__box__item div {
+    border-radius: .5rem;
+    height: 7rem;
+    width: 15rem;
+    background-color: var(--deep);
+    margin-bottom: 1rem;
+}
+
+.footer {
+    color: var(--grey);
+    padding: 3rem 0;
+    height: 10rem;
+    text-align: center;
+}
+
+.footer__icon {
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+.footer__icon div {
+    background-color: var(--grey);
+    height: 3rem;
+    width: 3rem;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 576px) {
+    .wrap {
+        padding: 1rem;
+    }
+
+    .social {
+        justify-content: center;
+    }
+
+    .header {
+        justify-content: space-evenly;
+    }
+    .header__logo {
+        display: none;
+    }
+
+    .cases__box {
+        flex-flow: wrap;
+    }
+    .cases__box__item {
+        margin: 2rem 0;
+    }
+
+    .customers {
+        flex-flow: column;
+    }
+    .customers__box {
+        margin: 1rem;
+    }
+
+    .feedback__box__item {
+        margin: 1rem;
+    }
+}
