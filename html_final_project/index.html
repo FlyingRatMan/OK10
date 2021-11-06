@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+
+    <title>Car website</title>
+</head>
+<body>
+    <nav>
+        <div class="nav_bar">
+            <div class="nav_bar__top container-xxl d-xxl-flex justify-content-between align-items-center col-gap">
+                <div class="d-flex col-gap h-100 align-items-center">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-geo-alt d-none d-md-inline city" viewBox="0 0 16 16">
+                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        </svg>
+                        <div class="d-inline city">Ваш город: <u>Москва</u></div>
+                    </div>
+
+                    <div class="dropdown d-flex col-gap">
+                        <div class="d-block d-md-none">Еще</div>
+                        <div class="d-none d-md-inline">Информация</div>
+                        <div class="d-none d-md-inline">Сотрудничество</div>
+                    </div>
+                </div>
+                <div class="nav_menu d-none d-xxl-flex justify-content-between col-gap">
+                    <div class="links d-flex col-gap">
+                        <a href="">Доставка</a>
+                        <a href="">Оплата</a>
+                        <a href="">Гарантия</a>
+                        <a href="">Новости</a>
+                        <a href="">Журнал</a>
+                        <a href="">О магазине</a>
+                        <a href="">Контакты</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav_bar__main">
+            <div class="container-xxl">
+                <div class="row-logo d-flex justify-content-between align-items-center">
+
+                    <div class="logo">
+                        <img src="img/logo.png" alt="logo">
+                    </div>
+
+                    <div class="working-hours d-none d-md-block">
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                 class="bi bi-clock" viewBox="0 0 16 16">
+                                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                            </svg>
+                            Мы работаем: будни - 9:00-21:00
+                        </p>
+                        <p>сб. - 10:00-15:00</p>
+                    </div>
+
+                    <div class="location d-none d-md-block">
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                 class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            </svg>
+                            Невский пр-т, д. 45
+                        </p>
+                    </div>
+
+                    <div class="d-flex flex-md-row flex-column-reverse align-items-end col-gap">
+                        <div class="whatsapp">
+                            <img src="img/whatsapp.png" alt="whatsapp">
+                        </div>
+
+                        <div class="phone">
+                            <p>+7 383 291 92 86</p>
+                            <p>форма обратной связи</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <button class="btn-gen btn-menu d-flex justify-content-center align-items-center">
+                        <div class="btn-burger"><span></span><span></span><span></span></div>
+                        <p class="d-none d-md-block">Каталог</p>
+                    </button>
+                    <div class="nav-search input-group">
+                        <input type="text" class="form-control" placeholder="Поиск по наименованию или артикулу"
+                               aria-label="" aria-describedby="basic-addon1">
+                        <div class="input-group-append">
+                            <button class="nav-search-btn btn btn-gen" type="button">
+                                <p class="d-none d-md-block">Найти</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="d-md-none d-block bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="nav-icons col-gap d-none d-md-flex justify-content-end align-items-center">
+                        <h3 class="nav-icons-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                                 class="bi bi-person" viewBox="0 0 16 16">
+                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                            </svg>
+                            Войти
+                        </h3>
+                        <h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                                 class="bi bi-heart" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                            </svg>
+                            Избранное
+                        </h3>
+                        <h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                                 class="bi bi-cart2" viewBox="0 0 16 16">
+                                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                            </svg>
+                            Корзина
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container-xxl">
+
+<!--           BIG SLIDER-->
+            <div class="row mb-md-5 mb-4">
+                <div class="col-md-9">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="slider-bg d-flex col-gap justify-content-center align-items-center">
+                                    <div class="slider-card">
+                                        <h4>Сцепление в сборе</h4>
+                                        <p>14 499,99 ₽</p>
+                                        <button class="slider-btn btn-gen">В корзину</button>
+                                    </div>
+                                    <img src="img/bg-item.png" alt="bg-item" width="417">
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="slider-bg d-flex col-gap justify-content-center align-items-center">
+                                    <div class="slider-card">
+                                        <h4>Сцепление в сборе</h4>
+                                        <p>14 499,99 ₽</p>
+                                        <button class="slider-btn btn-gen">В корзину</button>
+                                    </div>
+                                    <img src="img/bg-item.png" alt="bg-item" width="417">
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                           data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                           data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-items-baseline d-md-block">
+                    <div class="row">
+                        <div class="card adv justify-content-between">
+                            <h3 class="card-header adv">Акция</h3>
+                            <div class="d-flex flex-row">
+                                <img class="adv-img" src="img/itemone-card-slide.png" alt="Card image cap">
+                                <div class="card-body adv">
+                                    <h4 class="adv card-title">Обгонная муфта
+                                        гидротрансформатор</h4>
+                                    <div class="adv card-text d-flex align-items-baseline">4 430₽ <span>5 430₽</span>
+                                        <button class="btn-gen adv">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+                                                 fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                                                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-2 marg-cust">
+                        <div class="card adv justify-content-between">
+                            <h3 class="card-header adv">Акция</h3>
+                            <div class="d-flex flex-row">
+                                <img class="adv-img" src="img/itemtwo-card-slide.png" alt="Card image cap">
+                                <div class="card-body adv">
+                                    <h4 class="adv card-title">Комплект фрикционных дисков</h4>
+                                    <div class="adv card-text d-flex align-items-baseline">4 430₽ <span>5 430₽</span>
+                                        <button class="btn-gen adv">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+                                                 fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                                                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--            THREE SMALL SLIDERS-->
+            <div class="row mb-md-5 mb-4 flex-nowrap">
+                <div class="col">
+                    <div class="category card d-flex flex-row">
+                        <div class="category card-body my-auto">
+                            <h4 class="category card-title">Масла</h4>
+                            <p class="category card-text">
+                                Трансмиссионное масло;
+                                присалка в масло акпп
+                            </p>
+                            <button class="category btn-gen">Перейти</button>
+                        </div>
+                        <img class="category-card-img" src="img/first-row-slide.png" alt="Card image cap">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="category card d-flex flex-row">
+                        <div class="category card-body my-auto">
+                            <h4 class="category card-title">Фильтры</h4>
+                            <p class="category card-text">
+                                Масляный фильтр;
+                                фильтр воздушный
+                            </p>
+                            <button class="category btn-gen">Перейти</button>
+                        </div>
+                        <img class="category-card-img" src="img/sec-row-slide.png" alt="Card image cap">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="category card d-flex flex-row">
+                        <div class="category card-body my-auto">
+                            <h4 class="category card-title">Радиаторы</h4>
+                            <p class="category card-text">
+                                Дополнительные
+                                радиаторы
+                            </p>
+                            <button class="category btn-gen">Перейти</button>
+                        </div>
+                        <img class="category-card-img" src="img/third-row-slide.png" alt="Card image cap">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="sales_btns container-xxl d-flex d-md-block">
+            <button type="button" class="btn-gen btn">Подборки товаров</button>
+            <button type="button" class="btn-gen-out btn">Акции</button>
+            <button type="button" class="btn-gen-out btn">Сейчас покупают</button>
+        </div>
+
+        <div class="container-xxl">
+            <!--FIRST ROW-->
+            <div class="sales row">
+                <div class="col-md-3 col-6">
+                    <div class="sales card">
+                        <img class="card-img-top" src="img/sales-item-one.png" alt="Card image cap">
+                        <div class="sales card-body">
+                            <h4 class="sales card-title">Intermediate accumulator sleeve</h4>
+                            <p class="sales card-text">ЦЕНА <span>по запросу</span></p>
+                            <div>
+                                <button class="sales btn-gen">В корзину</button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-heart btn-heart" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="sales card">
+                        <img class="card-img-top" src="img/sales-item-two.png" alt="Card image cap">
+                        <div class="sales card-body">
+                            <h4 class="sales card-title">Intermediate accumulator sleeve</h4>
+                            <p class="sales card-text">ЦЕНА <span>по запросу</span></p>
+                            <div>
+                                <button class="sales btn-gen">В корзину</button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-heart btn-heart" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="sales card">
+                        <img class="card-img-top" src="img/sales-item-one.png" alt="Card image cap">
+                        <div class="sales card-body">
+                            <h4 class="sales card-title">Intermediate accumulator sleeve</h4>
+                            <p class="sales card-text">ЦЕНА <span>по запросу</span></p>
+                            <div>
+                                <button class="sales btn-gen">В корзину</button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-heart btn-heart" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="sales card">
+                        <img class="card-img-top" src="img/sales-item-three.png" alt="Card image cap">
+                        <div class="sales card-body">
+                            <h4 class="sales card-title">Intermediate accumulator sleeve</h4>
+                            <p class="sales card-text">ЦЕНА <span>по запросу</span></p>
+                            <div>
+                                <button class="sales btn-gen">В корзину</button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-heart btn-heart" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--SECOND ROW            -->
+            <div class="row d-none d-md-flex">
+                <div class="col">
+                    <div class="sales card">
+                        <img class="card-img-top" src="img/sales-item-one.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="sales card-title">Intermediate accumulator sleeve</h4>
+                            <p class="sales card-text">ЦЕНА <span>по запросу</span></p>
+                            <div>
+                                <button class="sales btn-gen">В корзину</button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-heart btn-heart" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="sales card">
+                        <img class="card-img-top" src="img/sales-item-two.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="sales card-title">Intermediate accumulator sleeve</h4>
+                            <p class="sales card-text">ЦЕНА <span>по запросу</span></p>
+                            <div>
+                                <button class="sales btn-gen">В корзину</button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-heart btn-heart" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="sales card">
+                        <img class="card-img-top" src="img/sales-item-one.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="sales card-title">Intermediate accumulator sleeve</h4>
+                            <p class="sales card-text">ЦЕНА <span>по запросу</span></p>
+                            <div>
+                                <button class="sales btn-gen">В корзину</button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-heart btn-heart" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="sales card">
+                        <img class="card-img-top" src="img/sales-item-three.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="sales card-title">Intermediate accumulator sleeve</h4>
+                            <p class="sales card-text">ЦЕНА <span>по запросу</span></p>
+                            <div>
+                                <button class="sales btn-gen">В корзину</button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-heart btn-heart" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <button type="button" class="sales btn-gen-out btn mt-4 d-block mx-auto">Показать еще</button>
+        </div>
+    </section>
+
+    <section class="news container-xxl">
+        <h2>НОВОСТИ</h2>
+        <div class="news row flex-column flex-md-row">
+            <div class="col">
+                <div class="news-date">3 ноября</div>
+                <h3 class="news-head">Изменения на сайте</h3>
+                <p class="news-text">Недавно на сайте мы ввели
+                    очередную порцию изменений,
+                    которые, как нам кажется, должны
+                    улучшить функциональность сайта
+                    и сделать его более удобным для
+                    пользователей. Реакция посетителей
+                    не заставила себя долго ждать...</p>
+            </div>
+            <div class="col">
+                <div class="news-date">2 ноября</div>
+                <h3 class="news-head">Вышла новая версия для
+                    мобильных приложений</h3>
+                <ul class="news-text">Что нового в 2.0:
+                    <li> добавлена история поиска;</li>
+                    <li> добавлена синхронизация с сервером;</li>
+                    <li> испрвление ошибок.</li>
+                </ul>
+            </div>
+            <div class="col">
+                <div class="news-date">1 ноября</div>
+                <h3 class="news-head">Очередная порция обновлений для
+                    мобильных приложений</h3>
+                <ul class="news-text">Что нового добавлено:
+                    <li>поддержка пуш-уведомлений;</li>
+                    <li>разделы для покупателей;</li>
+                    <li>просмотр покупателя в заказах;</li>
+                    <li>возможность поиска;</li>
+                    <li>исправление ошибок.</li>
+                </ul>
+            </div>
+            <div class="col">
+                <div class="news-date">31 октября</div>
+                <h3 class="news-head">Интерфейс заказов для покупателей
+                    стал более функциональным</h3>
+                <p class="news-text">Он позволяет выводить все
+                    формируемые системой
+                    уведомления(e-mail, смс, web) в
+                    едином окне с системой удобной
+                    фильтрации поиска.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container-xxl">
+            <div class="row flex-column flex-md-row">
+                <div class="col col-md-2">
+                    <ul class="footer-name">КАТАЛОГ
+                        <li>Каталог запчастей</li>
+                        <li>Масла</li>
+                        <li>Фильтра</li>
+                        <li>Радиаторы</li>
+                        <li>Sonnax</li>
+                        <li>Manual</li>
+                        <li>Новинки</li>
+                        <li>Акции</li>
+                    </ul>
+                </div>
+                <div class="col col-md-2">
+                    <ul class="footer-name">РУБРИКАТОР
+                        <li>Доставка</li>
+                        <li>Оплата</li>
+                        <li>Гарантия</li>
+                        <li>Новости</li>
+                        <li>Журнал</li>
+                        <li>О магазине</li>
+                        <li>Контактная информация</li>
+                    </ul>
+                </div>
+                <div class="col col-md-3">
+                    <ul class="footer-name info">ИНФОРМАЦИЯ
+                        <li>Пользовательское соглашение
+                            об использовании персональных данных
+                        </li>
+                        <li>Политика конфиденциальности</li>
+                        <li>Соглашение на рассылку
+                            рекламных материалов
+                        </li>
+                        <li>Политика возвратов</li>
+                        <li>Мы принимаем</li>
+                        <li><img src="img/cards.png" alt="cards"></li>
+                    </ul>
+                </div>
+                <div class="col col-md-5">
+                    <div class="row">
+                        <div class="col">
+                            <ul class="footer-contact">КОНТАКТЫ
+                                <li>+7 383 291 92 86</li>
+                                <li>info@avt-zap.ru</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul class="footer-location">АДРЕС
+                                <li>г. Новосибирск,</li>
+                                <li>ул. Планировочная, 5, офис 105</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row footer-getback">
+                        <p>Мы онлайн, воспользуйтесь</p>
+                        <p>Форма обратной связи</p>
+                    </div>
+                    <div class="row footer-getback">
+                        <p>Подпишитесь на нашу расслыку и</p>
+                        <p>вы первыми узнаете о скидках и акциях</p>
+                    </div>
+                    <div class="row">
+                        <div class="footer input-group">
+                            <input type="text" class="form-control" placeholder="Введите ваш email" aria-label=""
+                                   aria-describedby="basic-addon1">
+                            <div class="input-group-append">
+                                <button class="footer btn btn-gen" type="button">Подписаться</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="footer-icons row flex-row justify-content-md-end">
+                        <div class="w-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 class="footer-icon bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                            </svg>
+                        </div>
+                        <div class="w-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 class="footer-icon bi bi-telegram" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                            </svg>
+                        </div>
+                        <div class="w-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 class="footer-icon bi bi-twitter" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                            </svg>
+                        </div>
+                        <div class="w-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 class="footer-icon bi bi-google" viewBox="0 0 16 16">
+                                <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="footer-claim">2017 © ООО «АВТ-ЗАП» - запчасти для акпп</h3>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+            crossorigin="anonymous"></script>
+</body>
+</html>
