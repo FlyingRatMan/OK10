@@ -3,6 +3,10 @@
         column-gap: 10px;
     }
 
+    .overfl {
+        overflow-x: scroll;
+    }
+
     .marg-cust {
         margin-left: 20px;
     }
